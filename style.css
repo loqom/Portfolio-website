@@ -1,0 +1,412 @@
+/* CSS Variables */
+:root {
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --glass-border: rgba(255, 255, 255, 0.2);
+    --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --accent-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    --shadow-glow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    --shadow-intense: 0 20px 60px rgba(0, 0, 0, 0.3);
+    --text-primary: #ffffff;
+    --text-muted: rgba(255, 255, 255, 0.7);
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Ensure body background color has high specificity */
+/* To change background color, modify the value below: */
+html body {
+    background-color: rgb(2, 2, 8) !important;
+    color: white;
+    font-family: "Jost", sans-serif;
+}
+
+.about{
+    background-color: rgb(21, 21, 25);
+    display: block;
+}
+
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(15, 0, 24);
+    height: 100px;
+    font-size: larger;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul li{
+    margin: 10px;
+    list-style: none;
+    
+}
+ul li a{
+    text-decoration: none;
+    color: aqua;
+}
+ul li a:hover{
+    
+    color: rgb(17, 17, 121);
+    font-size: 1 rem;
+}
+.left{
+    font-size: xx-large;
+    color: gray;
+}
+.first{
+    display: flex;
+    justify-content: space-around;
+    margin: 80px ;
+    align-items: center;
+}
+.leftpt{
+    font-size: 3rem;
+}
+/* .rightpt{
+    background-color: burlywood;
+}  */
+.first >div{
+    margin: 23px 0;
+    width: 40%;
+}
+main hr{
+    border: 0;
+    height: 1.2px;
+    background: aqua;
+    margin: 40px 84px;
+}
+span{
+    color: rgb(129, 134, 128);
+}
+.rightpt img{
+    height: 300px;
+}
+.frbutton{
+    display: flex;
+    
+    margin:20px;
+    gap: 1.5rem;
+    
+}
+.box1, .box2 {
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.box1 {
+    background: var(--primary-gradient);
+    color: rgb(26, 13, 13);
+    
+    box-shadow: var(--shadow-glow);
+    background-color: aqua;
+}
+
+.box1:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(102, 126, 234, 0.4);
+}
+
+.box2 {
+    background: transparent;
+    color: var(--text-primary);
+    border: 2px solid var(--glass-border);
+    backdrop-filter: blur(10px);
+}
+
+.box2:hover {
+    background: var(--glass-bg);
+    border-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-3px);
+}
+.aboutsec{
+    display: flex;
+    margin: 80px;
+    justify-content: space-around;
+}
+.abt{
+    font-size: 3rem;
+    color: rgb(129, 134, 128);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left2{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    width: 590px;
+
+}
+.right2{
+    font-size: 1.5rem;
+    width: 590px;
+    margin: 15px 0px 0px;
+}
+.progbox{
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.tech{
+    font-weight: bolder;
+    font-size: xx-large;
+    color: aqua;
+}
+.text{
+    font-size: large;
+}
+.progbox:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-glow);
+}
+.Skills{
+    margin-bottom: 50px;
+    
+}
+.skill1{
+    font-size: 3rem;
+    color: rgb(129, 134, 128);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.new{
+    margin-left: 476px;
+    font-size: 1.7rem;
+    margin-top: 50px;
+}
+.skillcard{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+.skilled{
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 2rem;
+    margin-top: 100px;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.skilled::before{
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--primary-gradient);
+    opacity: 0.1;
+    transition: left 0.5s ease;
+}
+.skilled:hover::before{
+    left: 0;
+}
+.skilled:hover{
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-intense);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+.ig{
+    font-size: 3rem;
+    /* margin-bottom: 1rem;
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; */
+}
+.nme{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+.lvl{
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.tx1{
+    font-size: 3rem;
+    color: rgb(129, 134, 128);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tx2{
+    margin-left: 635px;
+    font-size: 1.7rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.bsync {
+    display: flex;
+    margin-bottom: 100px;
+       
+
+}
+.igsm {
+    /* background: var(--glass-bg); */
+    /* backdrop-filter: blur(20px); */
+    /* border: 1px solid var(--glass-border); */
+    border-radius: 25px;
+    width: 60%;
+    /* overflow: hidden; */
+    /* transition: all 0.3s ease; */
+    /* position: relative; */
+}
+
+/* .igsm:hover {
+    transform: translateY(-15px);
+    box-shadow: var(--shadow-intense);
+} */
+.iklm{
+    margin-top: 10px;
+    margin-left: 100px;
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+.igsm:hover .iklm {
+    transform: scale(1.1);
+}
+.mim{
+  margin-left: 0px;
+}
+.ttle{
+    font-size: 1.5rem;
+    color: rgb(129, 134, 128);
+    margin-top: 10px;
+    margin-left: 0px;
+}
+.desc{
+    margin-left: 0px;
+    font-size: 1.2rem;
+}
+.box1a  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    padding: 0.8rem 0.8rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.box1a {
+    background: var(--primary-gradient);
+    color: rgb(26, 13, 13);
+    height: 25px;
+    width: 150px;
+    box-shadow: var(--shadow-glow);
+    background-color: rgb(46, 59, 59);
+}
+
+.box1a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgb(143, 196, 177);
+}
+.tct1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: rgb(129, 134, 128);
+    font-weight: bold;
+}
+.tct2{
+    
+    margin-left:600px;
+    font-size: 1.7rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.crds{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+.cncrd{
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+}
+.cncrd:hover{
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-glow);
+}
+.lgo{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    /* background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; */
+}
+.sys{
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+.knil{
+    color: var(--text-muted);
+}
+.credentials{
+    width: 100%;
+    background-color: rgb(22, 18, 18);
+    color: aqua;
+    margin-top: 25px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    margin-top: 100px; /* Add space for fixed navbar */
+}
