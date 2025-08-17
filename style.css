@@ -355,7 +355,7 @@ span{
 }
 .tct2{
     
-    margin-left:600px;
+    margin-left:570px;
     font-size: 1.7rem;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -409,4 +409,8 @@ span{
 }
 main{
     margin-top: 100px; /* Add space for fixed navbar */
+}
+a{
+    color: grey;
+    text-decoration: none;
 }
