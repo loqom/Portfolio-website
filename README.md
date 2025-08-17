@@ -54,5 +54,3 @@ BloodSync is a full-stack web application designed to connect blood donors with 
 
 
 
-Feel free to clone this repo to customize or build upon it:
-
