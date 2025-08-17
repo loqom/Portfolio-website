@@ -20,6 +20,12 @@ You can visit the live website here:
 - Skills and technologies I use, including HTML/CSS, C++, Python, and JavaScript  
 - Projects showcase with a focus on real applications  
 - Contact and connect section for networking opportunities
+  
+## Technologies Used
+
+- HTML5, CSS3  
+- JavaScript
+
 
 ## Key Project: BloodSync
 
